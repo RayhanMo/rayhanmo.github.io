@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Position Example</title>
+    <style>
+        #imageContainer {
+            position: relative;
+        }
+        #clickPosition {
+            position: absolute;
+            color: red;
+            font-weight: bold;
+        }
+        #clickableImage.hover{
+                cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="imageContainer">
+    <img src="YOINK.jpeg" class="hover" alt="Click Me" id="clickableImage">
+    <div id="clickPosition"></div>
+</div>
+
+<script>
+    // Get the clickable image element
+    var clickableImage = document.getElementById('clickableImage');
+
+    // Add a click event listener to the image
+    clickableImage.addEventListener('click', function (event) {
+        // Get the coordinates of the click relative to the image
+        var x = event.offsetX;
+        var y = event.offsetY;
+
+        // Display the click position
+        var clickPosition = document.getElementById('clickPosition');
+        clickPosition.innerText = 'x' //'Click Position: (' + x + ', ' + y + ')';
+        clickPosition.style.left = x + 'px';
+        clickPosition.style.top = y + 'px';
+    });
+</script>
+
+</body>
+</html>

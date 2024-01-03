@@ -1,0 +1,48 @@
+body {
+    font-family:"Open Sans", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+}
+.container {
+    max-width:500px;
+    width:100%;
+    margin:0 auto;
+}
+form{
+    width: 100%;
+}
+label{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+input, textarea {
+    font-family:"Open Sans", Helvetica, Arial, sans-serif;
+    width:100%;
+    border:1px solid #CCC;
+    background:#FFF;
+    margin:0 0 5px;
+    padding:10px;
+}
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+button{
+    cursor:pointer;
+    width: 100%;
+    border:none;
+    background:rgb(3, 153, 212);
+    color:#FFF;
+    margin:0 0 5px;
+    padding:10px;
+    font-size:15px;
+}
+.text-center{
+    text-align: center !important;
+}
+.g-recaptcha
+{
+    display:inline-block !important;
+}
